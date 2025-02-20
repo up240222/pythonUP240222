@@ -61,3 +61,13 @@ pendiente = ((y_2)-(y_1))/((x_2)-(x_1))
 euclides = math.sqrt((x_2 - x_1) ** 2 + (y_2 - y_1) ** 2)
 print("La pendiente es",pendiente)
 print("La distancia de Euclidiana es de",euclides)
+
+#10 .Compare the slopes in tasks 8 and 9.
+if m == pendiente:
+    print ("las pendientes son iguales")
+elif m>pendiente:    
+    print ("la primera pendiente es mayor")
+else:
+    print ("la segunda pendiente es mayor")
+
+#11 Calculate the value of y (y = x^2 + 6x + 9). Try to use different x values and figure out at what x value y is going to be 0.
