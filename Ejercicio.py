@@ -71,3 +71,62 @@ else:
     print ("la segunda pendiente es mayor")
 
 #11 Calculate the value of y (y = x^2 + 6x + 9). Try to use different x values and figure out at what x value y is going to be 0.
+
+a= 1
+b = 6
+c = 9
+x =( -b +-((b * b ) - 4*(a * c))**.5)/2 * a
+print (x)
+print ("coloque el valor de x" , x )
+y = (  x*x + 6*x + 9)
+print ("el valor de y es : " ,y)
+
+#12 Find the length of 'python' and 'dragon' and make a falsy comparison statement.
+print ("largo de pyhton y de dragon " )
+len_pyhton=len('python')
+len_dragon=len('dragon')
+falsy_comp=len_pyhton == len_dragon
+print (" lenght of python is :",{ len_pyhton})
+print (" lenght of python is :",{ len_dragon})
+print ("falsy comparission ( length of python  == length of dragon ) : ,", falsy_comp )
+
+#13 Use and operator to check if 'on' is found in both 'python' and 'dragon'
+on_both = 'on' in 'python' and 'on' in 'dragon'
+if on_both == True :
+    print ("the word 'on' is found in both words")
+else :
+    print ("la palabra no se encuentra en las palabras")
+
+#14 I hope this course is not full of jargon. Use in operator to check if jargon is in the sentence.
+print ( "check if the word jargon is in the sentence")
+sentence =' I hope this course is not full of jargon'
+jargon_sentence = 'jargon' in sentence
+if jargon_sentence == True :
+    print ("the word 'jargon is found in the sentence " )
+else :
+    print ("the word is not found in the sentence")
+
+#15 There is no 'on' in both dragon and python
+on_both = 'on' in 'python' and 'on' in 'dragon'
+if on_both == True :
+    print ("the word 'on' is not found in the sentence")
+else :
+    print ("the word is found in the sentence")
+
+#16 Find the length of the text python and convert the value to float and convert it to string
+print ("largo de pyhton " )
+len_pyhton=len('python')
+print ( " el largo de la palabra es : " , len_pyhton )
+len_pyhton=float(len_pyhton)
+print( " se convirtió el valor " , type (len_pyhton))
+len_pyhton=str(len_pyhton)
+print( " se convirtió el valor " , type (len_pyhton))
+
+#17 Even numbers are divisible by 2 and the remainder is zero. How do you check if a number is even or not using python?
+print( " ingrese el numero")
+num=( int(input("ingresa el número")))
+par= num % 2 == 0
+if par ==True:
+    print ("el número es par " )
+else :
+    print ( " el número es impar")
