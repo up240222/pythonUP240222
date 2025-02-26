@@ -15,3 +15,4 @@ len_company=len (company)
 print ( len_company)
 
 #6 Change all the characters to uppercase letters using _upper()_ method.
+print (company.upper())
