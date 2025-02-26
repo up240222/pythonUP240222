@@ -123,10 +123,47 @@ len_pyhton=str(len_pyhton)
 print( " se convirtió el valor " , type (len_pyhton))
 
 #17 Even numbers are divisible by 2 and the remainder is zero. How do you check if a number is even or not using python?
-print( " ingrese el numero")
-num=( int(input("ingresa el número")))
+
+num=( int(input("put a number")))
 par= num % 2 == 0
 if par ==True:
     print ("el número es par " )
 else :
     print ( " el número es impar")
+
+##18. Check if the floor division of 7 by 3 is equal to the int converted value of 2.7.
+division = 7/3
+d = float (7/3)
+equal = d == division
+print("the number is equal: ", equal)
+
+##19. Check if type of '10' is equal to type of 10
+typ = int('10')
+t=(10)
+c=typ==t
+print("type'10' is equal to 10: ",c)
+
+##20.Check if int('9.8') is equal to 10
+ch = float('9.8')
+c= int(ch)
+d=10
+compare=c==d
+print("int('9.8') es igual a 10: ",compare)
+
+##21. Writ a script that prompts the user to enter hours and rate per hour. Calculate pay of the person?
+hours=int(input("ingresa las horas que trabajaste: "))
+pay=float(input("cuanto te pagan por hora: "))
+r=hours*pay
+print("your pay is about :", r)
+
+##22.Write a script that prompts the user to enter number of years. Calculate the number of seconds a person can live. Assume a person can live hundred years
+years =int(input(" "))
+seconds= years  * 365 * 24 * 3600
+hundred_years_to_second = 100 * 365 * 24 * 3600
+secondsleft= hundred_years_to_second - years
+print ( "seconds left are : " , secondsleft)
+  
+#23 Write a Python script that displays the following table
+print("a   a^0   a^ 1 a^2 a^3")
+for a in range (1 , 6):
+    print(f" {a} {a**0} {a**1} {a**2}  {a**3}")
