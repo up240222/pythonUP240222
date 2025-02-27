@@ -58,4 +58,7 @@ print (company[10])
 acronym = comp[0] + comp[7] + comp[-8] 
 print( acronym)
 
+#19 Create an acronym or an abbreviation for the name 'Coding For All'.
+acr= company[0] + company[-7] + company [-3]
+print(acr)
 
