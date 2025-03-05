@@ -96,3 +96,27 @@ full_stack = integers
 full_stack.insert (5 , 'Python')
 full_stack.insert (6 ,  'SQL')
 print(full_stack)
+
+#exercises level 2
+#1. The following is a list of 10 students ages:
+
+#```sh
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+
+ages_in_order = (sorted(ages))
+
+print ('the min age is :' , ages_in_order[0] , 'the max age is :', ages_in_order[-1])
+(ages_in_order.insert (0 ,ages_in_order[0]) , ages_in_order.insert ( -1 , ages_in_order[-1]) )
+
+print(ages_in_order)
+midddle=((len(ages_in_order)//2))
+
+print('the median item is : ' ,ages_in_order[midddle])
+average = (sum (ages_in_order))//len(ages_in_order)
+print ('the average age is :' , average )
+
+range = max (ages_in_order)-min(ages_in_order)
+print (range)
+value1=(min(ages_in_order))-(average )
+value2 =(max(ages_in_order))-(average)
+print (abs(value1 -value2))
