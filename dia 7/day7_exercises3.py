@@ -20,3 +20,5 @@ sentence = ('I am a teacher and I love to inspire and teach people'.split())
 set_sentence= set(sentence)
 print('ahi hay ', len(set_sentence), 'unicas palabras en la oración: ', n)
 
+
+
