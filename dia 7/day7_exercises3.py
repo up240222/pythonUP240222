@@ -22,3 +22,5 @@ print('ahi hay ', len(set_sentence), 'unicas palabras en la oración: ', n)
 
 
 
+#REVISADO
+print("Revisado")
