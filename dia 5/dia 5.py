@@ -98,4 +98,5 @@ full_stack.insert (6 ,  'SQL')
 print(full_stack)
 
 
-
+#REVISADO
+print("Revisado")

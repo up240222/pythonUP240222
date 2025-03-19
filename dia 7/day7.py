@@ -15,3 +15,5 @@ print('''The difference is that remove method only works when the item is in the
       so we use discard because if the item is not found in the list it will comtinue assuming that the item is eliminated or does 
       not exist''')
 
+#REVISADO
+print("Revisado")
