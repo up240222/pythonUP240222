@@ -35,7 +35,7 @@ else:
 if person['is_married']== True and person['country']=='Finland':
     print('Asabeneh Yetayeh lives in Finland. He is married')
 else:
-    print('it doesn´t match')
+    print('it does not match')
 '''
     
 
