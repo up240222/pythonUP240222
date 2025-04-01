@@ -202,6 +202,29 @@ fruits=['banana', 'orange', 'mango', 'lemon']
 ordenfrutas=fruits[::-1]
 print(ordenfrutas)
 #Go to the data folder and use the countries_data.py file.
+
 #What are the total number of languages in the data
+from paisdata import paises
+datos = paises
+countrylanguage = []
+for pais in datos:
+  for language in pais ["languages"]:
+    countrylanguage.append (language )
+print('the total numbers of languages are:', len(countrylanguage))
+
 #Find the ten most spoken languages from the data
+ordenatedlanguage=set(countrylanguage)
+dictionary_languages= {}
+for language in ordenatedlanguage:
+  dictionary_languages['languages']=0
+print(dictionary_languages)
+for idiom in dictionary_languages:
+  for pais in datos:
+    if idiom in pais['languages']:
+      dictionary_languages[idiom]=pais['population'] + dictionary_languages[idiom]
+sortedthingspopulation = sorted(dictionary_languages.values(), reverse=True)
+sorfkeyslanguagespopulation = sorted(dictionary_languages, key= dictionary_languages.get, reverse=True)
+print(sortedthingspopulation[0], sortedthingspopulation[0])
+
+
 #Find the 10 most populated countries in the world
