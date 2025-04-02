@@ -214,9 +214,11 @@ print('the total numbers of languages are:', len(countrylanguage))
 
 #Find the ten most spoken languages from the data
 ordenatedlanguage=set(countrylanguage)
-dictionary_languages= {}
+dictionary_languages= {
+
+}
 for language in ordenatedlanguage:
-  dictionary_languages['languages']=0
+  dictionary_languages[language]=0
 print(dictionary_languages)
 for idiom in dictionary_languages:
   for pais in datos:
@@ -224,7 +226,12 @@ for idiom in dictionary_languages:
       dictionary_languages[idiom]=pais['population'] + dictionary_languages[idiom]
 sortedthingspopulation = sorted(dictionary_languages.values(), reverse=True)
 sorfkeyslanguagespopulation = sorted(dictionary_languages, key= dictionary_languages.get, reverse=True)
-print(sortedthingspopulation[0], sortedthingspopulation[0])
+print(sorfkeyslanguagespopulation[0], sortedthingspopulation[0])
 
 
 #Find the 10 most populated countries in the world
+
+
+print('Los 10 idiomas mas hablados en el mundo son (orden decendente)')
+for i in range(10):
+   print(i+1, sorfkeyslanguagespopulation[i] , sortedthingspopulation[i])
