@@ -51,3 +51,5 @@ if fruit in fruits:
 else:
     fruits.append(fruit)
     print(fruits)
+
+print("revisado")
