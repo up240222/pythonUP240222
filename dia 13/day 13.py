@@ -48,9 +48,26 @@ countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', '
 {'country': 'SWEDEN', 'city': 'STOCKHOLM'},
 {'country': 'NORWAY', 'city': 'OSLO'}]'''
 
-lista=[pais for name in countries for pais in name]
-print(lista)
-dictionary_countries= {}
-for pais in lista:
-    dictionary_countries[pais['country']]
-print(dictionary_countries)ss
+result = [
+    {'country': country.upper(), 'city': city.upper()}
+    for [(country, city)] in countries
+]
+
+#6 Change the following list of lists to a list of concatenated strings:
+
+names = [[('Asabeneh', 'Yetayeh')], [('David', 'Smith')], [('Donald', 'Trump')], [('Bill', 'Gates')]]
+#output ['Asabeneh Yetaeyeh', 'David Smith', 'Donald Trump', 'Bill Gates']
+result = [' '.join(name_tuple) for [(name_tuple)] in names]
+print(result)
+
+#7 Write a lambda function which can solve a slope or y-intercept of linear functions.
+linear_solver = lambda x1, y1, x2, y2, solve_for: (
+    (y2 - y1) / (x2 - x1) #formula de la ´pendiente
+    if solve_for == 'slope' 
+    else         
+    y1 - ((y2 - y1) / (x2 - x1)) * x1 
+    if solve_for == 'y-intercept' else None)
+m = linear_solver(2, 4, 6, 8, 'slope')       
+b = linear_solver(2, 4, 6, 8, 'y-intercept')   
+
+print(f"La ecuación de la recta es: y = {m}x + {b}")
