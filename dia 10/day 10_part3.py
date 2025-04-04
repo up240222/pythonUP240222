@@ -232,6 +232,6 @@ print(sorfkeyslanguagespopulation[0], sortedthingspopulation[0])
 #Find the 10 most populated countries in the world
 
 
-print('Los 10 idiomas mas hablados en el mundo son (orden decendente)')
+print('Los 10 idiomas mas pupulados en el mundo son (orden decendente)')
 for i in range(10):
    print(i+1, sorfkeyslanguagespopulation[i] , sortedthingspopulation[i])
