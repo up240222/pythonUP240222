@@ -25,3 +25,5 @@ def rgb_color_gen():
     blue=random.randint(0, 255)
     return(red,green,blue)
 print(rgb_color_gen)
+
+print("Revisado")

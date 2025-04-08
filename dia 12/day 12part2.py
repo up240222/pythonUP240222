@@ -47,7 +47,7 @@ print("Colores Hexadecimales:", hex_colors)
 rgb_colors = generate_colors(5, "rgb")
 print("Colores RGB:", rgb_colors)
 print(generate_colors())
-
+print("Revisado")
 
     
 

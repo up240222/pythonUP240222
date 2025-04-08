@@ -20,5 +20,5 @@ for i in range(101):
 print('la suma par  es de ', sumapar)
 print('la suma impar  es de ', sumaimpar)
 
-
+print("Revisado")
 #The sum of all evens is 2550. And the sum of all odds is 2500.

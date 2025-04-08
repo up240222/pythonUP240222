@@ -71,3 +71,4 @@ m = linear_solver(2, 4, 6, 8, 'slope')
 b = linear_solver(2, 4, 6, 8, 'y-intercept')   
 
 print(f"La ecuación de la recta es: y = {m}x + {b}")
+print("Revisado")
